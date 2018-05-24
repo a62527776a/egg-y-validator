@@ -16,6 +16,6 @@ exports.validator = {
   types() {},
   async formatter(ctx, error) {
     ctx.status = 400;
-    ctx.body = error[0].message;
+    ctx.body = error;
   },
 };
